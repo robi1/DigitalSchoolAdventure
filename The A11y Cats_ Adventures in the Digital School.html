@@ -477,7 +477,15 @@ Una nodded thoughtfully. “But look how they’re scattered. We’ll need to ta
 
 
 (if: $captionsComplete and $altTextComplete and $keyboardComplete and $contrastComplete and $formsComplete)
-[As they worked, the Accessibility Gateway hummed louder, inching open with every success. But the A11y Cats noticed how even small missteps created barriers. “Accessibility isn’t just one fix at a time,” Perci said. “It’s about making the whole journey smooth for everyone.”]
+[
+  (if: not $clickMe)
+  [As they worked, the Accessibility Gateway hummed louder, inching open with every success. But the A11y Cats noticed how even small missteps created barriers. “Accessibility isn’t just one fix at a time,” Perci said. “It’s about making the whole journey smooth for everyone.”]
+  (else:)
+  [
+   (text-colour: &quot;yellow&quot;)
+   [As they worked, the Accessibility Gateway hummed louder, inching open with every success. But the A11y Cats noticed how even small missteps created barriers. “Accessibility isn’t just one fix at a time,” Perci said. “It’s about making the whole journey smooth for everyone.”]
+   ]
+ ]
 
 
 
@@ -1155,7 +1163,7 @@ The A11y Cats are a very special group of friends, each with a unique talent tha
 
 &lt;br&gt;&lt;br&gt;
 
-The A11y Cats have a special rulebook called the Web Content Accessibility Guidelines, or WCAG (say it like “Wuh-kag”!). It’s their trusty guide to make sure everyone can use the internet, no matter how they get around. With their awesome skills, the A11y Cats make the digital world a fun and friendly place for everyone!
+The A11y Cats follow a special rulebook called the Web Content Accessibility Guidelines, or WCAG (say it like “Wuh-kag”!). It’s their trusty guide to make sure everyone can use the internet, no matter how they get around. With their awesome skills, the A11y Cats make the digital world a fun and friendly place for everyone!
 
 
 [[Why Focus on These Principles?]] </tw-passagedata><tw-passagedata pid="43" name="Why Focus on These Principles?" tags="" position="500,50" size="100,100">&lt;style&gt;
@@ -1211,7 +1219,7 @@ For example:
 
 
 
-The A11y Cats focus on four super-important principles to fix problems that make the web tricky for some people to use. The WebAIM report shows that with just a little learning, these problems can be fixed quickly. And when the web is easier for everyone to use, it’s way more fun for all!
+The A11y Cats focus on the four super-important principles to fix problems that make the web tricky for some people to use. The WebAIM report shows that with just a little learning, these problems can be fixed quickly. And when the web is easier for everyone to use, it’s way more fun for all of us!
 
 So, let’s be like the A11y Cats—learn a little, help a lot, and make the internet a place where everyone can play, explore, and have a great time!
 
